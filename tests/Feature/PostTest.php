@@ -2,7 +2,7 @@
 
 use App\Models\User;
 
-it('can view post', function () {
+it('can view volt post', function () {
     $user = User::factory()->create();
     $post = $user->posts()->create();
 
