@@ -28,3 +28,6 @@ Route::get('livewire-post/{post}', LivewirePost::class)
 Route::get('alternate/{post}', [PostController::class, 'show'])
     ->middleware(['auth', 'can:view,post'])
     ->name('alternate');
+
+Volt::route('volt-functional-post/{post}', 'volt-functional-post')
+    ->name('volt-functional-post');
